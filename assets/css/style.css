@@ -1719,10 +1719,16 @@ img {
     .hero-visual { order: -1; }
 
     .calculator {
-        padding: 44px 28px;
+        padding: 28px 16px;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
     }
 
-    .calc-grid { gap: 32px; }
+    .calc-grid { gap: 28px; grid-template-columns: 1fr; }
+    .calc-form { width: 100%; }
+    .form-control { width: 100%; box-sizing: border-box; }
+    .calc-result-box { width: 100%; box-sizing: border-box; }
 
     .footer-grid {
         grid-template-columns: 1fr 1fr;
@@ -1751,17 +1757,19 @@ img {
     .footer-links { align-items: center; }
     .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
 
-    #calculator-sec { padding: 20px 0; }
-    .calculator { padding: 24px 14px; max-width: 100%; box-sizing: border-box; overflow: hidden; text-align: center; margin: 0 auto; border-radius: var(--r-lg); }
-    .calculator h2 { font-size: 1.4rem; text-align: center; }
-    .calculator p.subtitle { text-align: center; font-size: 0.9rem; margin-bottom: 24px; }
-    .calc-grid { gap: 20px; grid-template-columns: 1fr; }
-    .calc-form { width: 100%; }
-    .calc-form .form-group { text-align: left; }
-    .calc-result-box { padding: 24px 14px; margin: 0 auto; width: 100%; }
-    .result-val { font-size: 1.8rem; }
-    .dimensions-group { grid-template-columns: 1fr; gap: 10px; }
-    .form-control { padding: 12px 12px; font-size: 0.88rem; width: 100%; box-sizing: border-box; }
+    #calculator-sec { padding: 16px 0; overflow: hidden; }
+    .calculator { padding: 20px 12px; max-width: 100%; box-sizing: border-box; overflow: hidden; text-align: center; margin: 0 auto; border-radius: var(--r-md); }
+    .calculator h2 { font-size: 1.25rem; text-align: center; word-break: break-word; }
+    .calculator p.subtitle { text-align: center; font-size: 0.85rem; margin-bottom: 20px; }
+    .calc-grid { gap: 16px; grid-template-columns: 1fr; }
+    .calc-form { width: 100%; box-sizing: border-box; }
+    .calc-form .form-group { text-align: left; width: 100%; }
+    .calc-result-box { padding: 20px 12px; margin: 0 auto; width: 100%; box-sizing: border-box; }
+    .result-val { font-size: 1.6rem; }
+    .result-info { font-size: 0.8rem; }
+    .dimensions-group { grid-template-columns: 1fr; gap: 8px; }
+    .form-control { padding: 11px 10px; font-size: 0.85rem; width: 100%; box-sizing: border-box; }
+    .form-group label { font-size: 0.8rem; }
 
     .hero-grid { gap: 36px; }
 
