@@ -1044,6 +1044,7 @@ img {
    ============================================================ */
 #calculator-sec {
     padding: 30px 0;
+    overflow: hidden;
 }
 
 .calculator {
@@ -1750,8 +1751,13 @@ img {
     .footer-links { align-items: center; }
     .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
 
-    .calculator { padding: 36px 22px; }
+    .calculator { padding: 28px 16px; max-width: 100%; box-sizing: border-box; overflow: hidden; }
+    .calculator h2 { font-size: 1.5rem; }
+    .calc-grid { gap: 24px; }
+    .calc-result-box { padding: 28px 16px; }
+    .result-val { font-size: 2rem; }
     .dimensions-group { grid-template-columns: 1fr; }
+    .form-control { padding: 12px 14px; font-size: 0.9rem; }
 
     .hero-grid { gap: 36px; }
 
